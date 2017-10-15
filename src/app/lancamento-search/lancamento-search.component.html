@@ -1,0 +1,52 @@
+<div class="ui-g">
+
+  <div class="ui-g-12 ui-md-12 ui-lg-12">
+    <h1>Lançamentos</h1>
+  </div>
+
+  <div class="ui-g-12 ui-fluid">
+    <label class="label-bold" for="descricao">Descrição</label>
+    <input pInputText id="descricao" type="text" pTooltip="Descrição do lançamento" tooltipPosition="top">
+  </div>
+
+  <div class="ui-g-12">
+    <label class="label-bold label-block" for="descricao">Vencimento</label>
+    <input pInputText id="descricao" type="text" pTooltip="Data inicial" tooltipPosition="top">
+
+    <label class="label-bold" for="descricao">Até</label>
+    <input pInputText id="descricao" type="text" pTooltip="Data final" tooltipPosition="top">
+  </div>
+
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Pesquisar" pTooltip="Realizar uma busca de lançamentos baseada nos valores inseridos acima" tooltipPosition="top"></button>
+  </div>
+</div>
+
+<!-- <li *ngFor="let l of lancamentos">{{ l.pessoa }}</li> -->
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <p-dataTable [value]="lancamentos" [responsive]="true" [paginator]="true" [rows]="5">
+      <p-column field="pessoa" header="Pessoa"></p-column>
+      <p-column field="descricao" header="Descrição"></p-column>
+      <p-column field="dataVencimento" header="Vencimento"></p-column>
+      <p-column field="dataPagamento" header="Pagamento"></p-column>
+      <p-column field="valor" header="Valor">
+        <ng-template let-lancamento="rowData" pTemplate="body">
+          <span [style.color]="lancamento.tipo == 'DESPESA' ? 'red' : 'blue'">
+            {{ lancamento.valor }}
+          </span>
+        </ng-template>
+      </p-column>
+      <p-column>
+          <ng-template pTemplate="body">
+            <button pButton icon="fa-pencil" pTooltip="Editar" tooltipPosition="top"></button>
+            <button pButton icon="fa-trash" pTooltip="Remover" tooltipPosition="top"></button>
+          </ng-template>
+        </p-column>
+    </p-dataTable>
+  </div>
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Novo Lançamento" pTooltip="Adicionar um novo lançamento" tooltipPosition="top"></button>
+  </div>
+</div>
