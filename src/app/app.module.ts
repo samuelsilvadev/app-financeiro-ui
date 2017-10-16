@@ -10,12 +10,14 @@ import { DataTableModule } from 'primeng/primeng';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentoSearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    MenuLateralComponent
   ],
   imports: [
     BrowserModule,
