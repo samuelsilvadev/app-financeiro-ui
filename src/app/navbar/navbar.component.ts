@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  hiddenMenu: Boolean = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClickMenu() {
+    this.hiddenMenu = !this.hiddenMenu;
+  }
+
+  /**
+   * Este Método é usado pelo componente filho
+   * quando é clicado no submenu de fechar
+   * @param evento
+   */
+  onClickMudaVisibilidadeMenu(evento) {
+    this.hiddenMenu = evento.hidden;
   }
 
 }
