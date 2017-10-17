@@ -18,6 +18,11 @@ export class NavbarComponent implements OnInit {
     this.hiddenMenu = !this.hiddenMenu;
   }
 
+  /**
+   * Este Método é usado pelo componente filho
+   * quando é clicado no submenu de fechar
+   * @param evento
+   */
   onClickMudaVisibilidadeMenu(evento) {
     this.hiddenMenu = evento.hidden;
   }

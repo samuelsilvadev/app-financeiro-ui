@@ -18,6 +18,12 @@ export class MenuLateralComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Este método atualiza a variável local para fechar o menu
+   * e manda para o componente pai o valor da mesma
+   * Isso evita que ocasione um pequeno bus no componente pai na hora
+   * de clicar no icone para abrir o menu
+   */
   onClickFecharMenu() {
     this.display = !this.display;
     this.eventEmitterFecharMenu.emit({hidden: this.display});
