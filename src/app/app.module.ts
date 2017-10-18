@@ -13,6 +13,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
 
+import { ROUTING } from './app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
     ButtonModule,
     InputTextModule,
     DataTableModule,
-    TooltipModule
+    TooltipModule,
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
