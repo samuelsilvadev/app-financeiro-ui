@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { TabViewModule } from 'primeng/primeng';
 import { ButtonModule } from 'primeng/primeng';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
+import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea';
 import { DataTableModule } from 'primeng/primeng';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
+
 import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
+import { LancamentoFormComponent } from './lancamento-form/lancamento-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
     LancamentoSearchComponent,
     NavbarComponent,
     MenuLateralComponent,
-    PessoaSearchComponent
+    PessoaSearchComponent,
+    LancamentoFormComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,8 @@ import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
     ButtonModule,
     InputTextModule,
     DataTableModule,
-    TooltipModule
+    TooltipModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
