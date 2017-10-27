@@ -20,6 +20,8 @@ import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.compone
 import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
 import { LancamentoFormComponent } from './lancamento-form/lancamento-form.component';
 
+import { CurrencyMaskModule } from 'ng2-currency-mask';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { LancamentoFormComponent } from './lancamento-form/lancamento-form.compo
     InputTextareaModule,
     CalendarModule,
     SelectButtonModule,
-    DropdownModule
+    DropdownModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
