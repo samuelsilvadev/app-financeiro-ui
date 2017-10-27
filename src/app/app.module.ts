@@ -11,6 +11,7 @@ import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtexta
 import { DataTableModule } from 'primeng/primeng';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { CalendarModule } from 'primeng/components/calendar/calendar';
+import { SelectButtonModule } from 'primeng/primeng';
 
 import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -36,7 +37,8 @@ import { LancamentoFormComponent } from './lancamento-form/lancamento-form.compo
     DataTableModule,
     TooltipModule,
     InputTextareaModule,
-    CalendarModule
+    CalendarModule,
+    SelectButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

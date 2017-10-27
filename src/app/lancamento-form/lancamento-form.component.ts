@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LancamentoFormComponent implements OnInit {
 
+  tiposTransacao = [
+    { label: 'Receita', value: 'RECEITA'},
+    { label: 'Despesa', value: 'DESPESA'}
+  ];
+
   constructor() { }
 
   ngOnInit() {

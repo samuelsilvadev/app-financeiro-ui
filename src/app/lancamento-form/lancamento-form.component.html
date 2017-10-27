@@ -6,13 +6,17 @@
 
   <form>
 
+    <div class="ui-g-12">
+        <p-selectButton [options]="tiposTransacao" optionLabel="name" #tipoTransacao></p-selectButton>
+    </div>
+
     <div class="ui-g-6 ui-md-3 ui-fluid">
       <label for="">Vencimento</label>
       <p-calendar dateFormat="dd/mm/yy" [readonlyInput]="false" [showIcon]="true"></p-calendar>
     </div>
 
     <div class="ui-g-6 ui-md-3 ui-fluid">
-      <label for="">Recebimento</label>
+      <label for="">{{ tipoTransacao.value == 'RECEITA' ? 'Recebimento' : 'Pagamento' }}</label>
       <p-calendar dateFormat="dd/mm/yy" [readonlyInput]="false" [showIcon]="true"></p-calendar>
     </div>
 
