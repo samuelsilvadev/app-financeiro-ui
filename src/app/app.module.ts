@@ -13,6 +13,7 @@ import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { SelectButtonModule } from 'primeng/primeng';
 import { DropdownModule } from 'primeng/primeng';
+import { InputMaskModule } from 'primeng/primeng';
 
 import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,6 +22,7 @@ import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
 import { LancamentoFormComponent } from './lancamento-form/lancamento-form.component';
 
 import { CurrencyMaskModule } from 'ng2-currency-mask';
+import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { CurrencyMaskModule } from 'ng2-currency-mask';
     NavbarComponent,
     MenuLateralComponent,
     PessoaSearchComponent,
-    LancamentoFormComponent
+    LancamentoFormComponent,
+    PessoaFormComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { CurrencyMaskModule } from 'ng2-currency-mask';
     CalendarModule,
     SelectButtonModule,
     DropdownModule,
+    InputMaskModule,
     CurrencyMaskModule
   ],
   providers: [],
