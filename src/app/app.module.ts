@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -24,6 +25,7 @@ import { LancamentoFormComponent } from './lancamento-form/lancamento-form.compo
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +39,7 @@ import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     TabViewModule,
     ButtonModule,
     InputTextModule,
