@@ -25,6 +25,8 @@ import { LancamentoFormComponent } from './lancamento-form/lancamento-form.compo
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 import { MessageErrorComponent } from './message-error/message-error.component';
+import { GridLancamentosComponent } from './grid-lancamentos/grid-lancamentos.component';
+import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { MessageErrorComponent } from './message-error/message-error.component';
     PessoaSearchComponent,
     LancamentoFormComponent,
     PessoaFormComponent,
-    MessageErrorComponent
+    MessageErrorComponent,
+    LancamentoGridComponent
   ],
   imports: [
     BrowserModule,

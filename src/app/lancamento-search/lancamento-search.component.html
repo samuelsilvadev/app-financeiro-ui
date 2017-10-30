@@ -26,25 +26,7 @@
 
 <div class="ui-g">
   <div class="ui-g-12">
-    <p-dataTable [value]="lancamentos" [responsive]="true" [paginator]="true" [rows]="5">
-      <p-column field="pessoa" header="Pessoa"></p-column>
-      <p-column field="descricao" header="Descrição"></p-column>
-      <p-column field="dataVencimento" header="Vencimento"></p-column>
-      <p-column field="dataPagamento" header="Pagamento"></p-column>
-      <p-column field="valor" header="Valor">
-        <ng-template let-lancamento="rowData" pTemplate="body">
-          <span [style.color]="lancamento.tipo == 'DESPESA' ? 'red' : 'blue'">
-            {{ lancamento.valor | currency:'BRL':true:'1.2-3' }}
-          </span>
-        </ng-template>
-      </p-column>
-      <p-column>
-          <ng-template pTemplate="body">
-            <button pButton icon="fa-pencil" pTooltip="Editar" tooltipPosition="top"></button>
-            <button pButton icon="fa-trash" pTooltip="Remover" tooltipPosition="top"></button>
-          </ng-template>
-        </p-column>
-    </p-dataTable>
+    <app-lancamento-grid [lancamentos]="lancamentos"></app-lancamento-grid>
   </div>
   <div class="ui-g-12">
     <button pButton type="submit" label="Novo Lançamento" pTooltip="Adicionar um novo lançamento" tooltipPosition="top"></button>
