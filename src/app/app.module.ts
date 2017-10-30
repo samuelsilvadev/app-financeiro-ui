@@ -27,6 +27,7 @@ import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 import { MessageErrorComponent } from './message-error/message-error.component';
 import { GridLancamentosComponent } from './grid-lancamentos/grid-lancamentos.component';
 import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
+import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.compo
     LancamentoFormComponent,
     PessoaFormComponent,
     MessageErrorComponent,
-    LancamentoGridComponent
+    LancamentoGridComponent,
+    PessoaGridComponent
   ],
   imports: [
     BrowserModule,
