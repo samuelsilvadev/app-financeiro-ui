@@ -24,6 +24,7 @@ import { LancamentoFormComponent } from './lancamento-form/lancamento-form.compo
 
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
+import { MessageErrorComponent } from './message-error/message-error.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
     MenuLateralComponent,
     PessoaSearchComponent,
     LancamentoFormComponent,
-    PessoaFormComponent
+    PessoaFormComponent,
+    MessageErrorComponent
   ],
   imports: [
     BrowserModule,
