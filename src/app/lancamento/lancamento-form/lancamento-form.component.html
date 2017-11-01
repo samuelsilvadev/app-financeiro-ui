@@ -14,7 +14,7 @@
       <label for="">Vencimento</label>
       <p-calendar name="dataVencimento" dateFormat="dd/mm/yy" [readonlyInput]="false" [showIcon]="true" required ngModel #dataVencimento="ngModel"></p-calendar>
 
-      <app-message-error [control]="dataVencimento" error="required" text="Informe uma data de vencimento"></app-message-error>
+      <!-- <app-message-error [control]="dataVencimento" error="required" text="Informe uma data de vencimento"></app-message-error> -->
     </div>
 
     <div class="ui-g-6 ui-md-3 ui-fluid">
@@ -26,8 +26,8 @@
       <label for="">Descrição</label>
       <input name="descricao" type="text" required minlength="5" pInputText ngModel #descricao="ngModel">
 
-      <app-message-error [control]="descricao" error="required" text="Informe uma descrição"></app-message-error>
-      <app-message-error [control]="descricao" error="minlength" text="Minímo de {{ descricao.errors?.minlength?.requiredLength }} caracteres"></app-message-error>
+      <!-- <app-message-error [control]="descricao" error="required" text="Informe uma descrição"></app-message-error> -->
+      <!-- <app-message-error [control]="descricao" error="minlength" text="Minímo de {{ descricao.errors?.minlength?.requiredLength }} caracteres"></app-message-error> -->
 
     </div>
 
@@ -36,7 +36,7 @@
       <input name="valor" type="text" pInputText placeholder="0,00"  currencyMask [options]="{ prefix: '', thousands: ',', decimal: '.',  allowNegative: false }"
        ngModel required #valor="ngModel">
 
-      <app-message-error [control]="valor" error="required" text=" Campo valor obrigatório"></app-message-error>
+      <!-- <app-message-error [control]="valor" error="required" text=" Campo valor obrigatório"></app-message-error> -->
 
     </div>
 
