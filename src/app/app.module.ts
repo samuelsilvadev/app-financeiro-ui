@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
-import { MessageErrorComponent } from './message-error/message-error.component';
 
 @NgModule({
   imports: [
