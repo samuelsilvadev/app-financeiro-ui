@@ -1,0 +1,34 @@
+<div class="ui-g">
+
+  <div class="ui-g-12 ui-md-12 ui-lg-12">
+    <h1>Lançamentos</h1>
+  </div>
+
+  <div class="ui-g-12 ui-fluid">
+    <label class="label-bold" for="descricao">Descrição</label>
+    <input pInputText id="descricao" type="text" pTooltip="Descrição do lançamento" tooltipPosition="top">
+  </div>
+
+  <div class="ui-g-12">
+    <label class="label-bold label-block" for="dataVencimento">Vencimento</label>
+    <input pInputText id="dataVencimento" type="text" pTooltip="Data inicial" tooltipPosition="top">
+
+    <label class="label-bold" for="dataAte">Até</label>
+    <input pInputText id="dataAte" type="text" pTooltip="Data final" tooltipPosition="top">
+  </div>
+
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Pesquisar" pTooltip="Realizar uma busca de lançamentos baseada nos valores inseridos acima" tooltipPosition="top"></button>
+  </div>
+</div>
+
+<!-- <li *ngFor="let l of lancamentos">{{ l.pessoa }}</li> -->
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <app-lancamento-grid [lancamentos]="lancamentos"></app-lancamento-grid>
+  </div>
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Novo Lançamento" pTooltip="Adicionar um novo lançamento" tooltipPosition="top"></button>
+  </div>
+</div>
