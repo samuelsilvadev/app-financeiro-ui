@@ -1,0 +1,24 @@
+<div class="ui-g">
+
+  <div class="ui-g-12 ui-md-12 ui-lg-12">
+    <h1>Pessoas</h1>
+  </div>
+
+  <div class="ui-g-12 ui-fluid">
+    <label class="label-bold" for="nome">Nome</label>
+    <input pInputText id="nome" type="text" pTooltip="Nome da pessoa" tooltipPosition="top">
+  </div>
+
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Pesquisar" pTooltip="Realizar uma busca de pessoas baseada nos valores inseridos acima" tooltipPosition="top"></button>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <app-pessoa-grid [pessoas]="pessoas"></app-pessoa-grid>
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="submit" label="Nova Pessoa" pTooltip="Adicionar uma nova pessoa" tooltipPosition="top"></button>
+    </div>
+
+</div>
