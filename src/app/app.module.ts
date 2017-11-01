@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LancamentoModule } from './lancamento/lancamento.module';
 
 import { AppComponent } from './app.component';
 
@@ -16,36 +17,20 @@ import { SelectButtonModule } from 'primeng/primeng';
 import { DropdownModule } from 'primeng/primeng';
 import { InputMaskModule } from 'primeng/primeng';
 
-import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
-import { LancamentoFormComponent } from './lancamento-form/lancamento-form.component';
 
-import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 import { MessageErrorComponent } from './message-error/message-error.component';
-import { GridLancamentosComponent } from './grid-lancamentos/grid-lancamentos.component';
-import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
+
 import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    LancamentoSearchComponent,
-    NavbarComponent,
-    MenuLateralComponent,
-    PessoaSearchComponent,
-    LancamentoFormComponent,
-    PessoaFormComponent,
-    MessageErrorComponent,
-    LancamentoGridComponent,
-    PessoaGridComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    LancamentoModule,
     FormsModule,
     TabViewModule,
     ButtonModule,
@@ -56,8 +41,16 @@ import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
     CalendarModule,
     SelectButtonModule,
     DropdownModule,
-    InputMaskModule,
-    CurrencyMaskModule
+    InputMaskModule
+  ],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    MenuLateralComponent,
+    PessoaSearchComponent,
+    PessoaFormComponent,
+    MessageErrorComponent,
+    PessoaGridComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
