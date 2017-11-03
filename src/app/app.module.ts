@@ -3,13 +3,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { CoreModule } from './core/core.module';
 import { LancamentoModule } from './lancamento/lancamento.module';
 import { PessoaModule } from './pessoa/pessoa.module';
 
 import { AppComponent } from './app.component';
-
-import { NavbarComponent } from './navbar/navbar.component';
-import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 
 @NgModule({
   imports: [
@@ -17,12 +15,11 @@ import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.compone
     BrowserAnimationsModule,
     FormsModule,
     LancamentoModule,
-    PessoaModule
+    PessoaModule,
+    CoreModule
   ],
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    MenuLateralComponent
+    AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
