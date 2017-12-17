@@ -14,6 +14,7 @@ import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.compone
 import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
 
 import { ROUTING } from './app.routing';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ROUTING } from './app.routing';
     LancamentoSearchComponent,
     NavbarComponent,
     MenuLateralComponent,
-    PessoaSearchComponent
+    PessoaSearchComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
