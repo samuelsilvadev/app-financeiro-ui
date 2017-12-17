@@ -1,15 +1,15 @@
 <ul class="navbar-menu" [hidden]="display">
   <li class="navbar-menu-usuario-logado">Nome do usuário</li>
   <li class="navbar-menu-item">
-    <a routerLink="/lancamento/search">Lançamentos</a>
+    <a [routerLink]="['/lancamento/search']">Lançamentos</a>
   </li>
   <li class="navbar-menu-item">
-    <a routerLink="/pessoa/search">Pessoas</a>
+    <a [routerLink]="['/pessoa/search']">Pessoas</a>
   </li>
   <li class="navbar-menu-item">
     <a href="#">Logout</a>
   </li>
   <li class="navbar-menu-item">
-      <a href="#" (click)="onClickFecharMenu()">Fechar</a>
+      <a href="#" (click)="onClickFecharMenu($event)">Fechar</a>
   </li>
 </ul>
