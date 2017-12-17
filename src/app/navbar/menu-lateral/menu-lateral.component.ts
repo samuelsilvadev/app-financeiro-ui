@@ -24,7 +24,8 @@ export class MenuLateralComponent implements OnInit {
    * Isso evita que ocasione um pequeno bus no componente pai na hora
    * de clicar no icone para abrir o menu
    */
-  onClickFecharMenu() {
+  onClickFecharMenu(event) {
+    event.preventDefault();
     this.display = !this.display;
     this.eventEmitterFecharMenu.emit({hidden: this.display});
   }

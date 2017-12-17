@@ -14,7 +14,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickMenu() {
+  onClickMenu(event) {
+    event.preventDefault();
     this.hiddenMenu = !this.hiddenMenu;
   }
 

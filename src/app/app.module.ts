@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 
+import { ROUTING } from './app.routing';
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.compone
   declarations: [
     AppComponent,
     NavbarComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    HomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
