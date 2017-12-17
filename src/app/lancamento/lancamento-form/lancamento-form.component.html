@@ -58,7 +58,7 @@
     <div class="ui-g-12">
       <button type="submit" pButton label="Salvar" [disabled]="form.invalid"></button>
       <button type="submit" pButton label="Novo" class="ui-button-info"></button>
-      <a href="#">Voltar para pesquisa</a>
+      <a [routerLink]="['/lancamento/search']">Voltar para pesquisa</a>
     </div>
 
   </form>

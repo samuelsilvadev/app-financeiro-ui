@@ -2,6 +2,7 @@ import { SharedModule } from './../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { LancamentoSearchComponent } from './lancamento-search/lancamento-search.component';
 import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
@@ -19,7 +20,7 @@ import { ButtonModule } from 'primeng/components/button/button';
   imports: [
     CommonModule,
     FormsModule,
-
+    RouterModule,
     ButtonModule,
     InputTextModule,
     DataTableModule,
@@ -29,9 +30,7 @@ import { ButtonModule } from 'primeng/components/button/button';
     SelectButtonModule,
     DropdownModule,
     InputMaskModule,
-
     CurrencyMaskModule,
-
     SharedModule
   ],
   declarations: [

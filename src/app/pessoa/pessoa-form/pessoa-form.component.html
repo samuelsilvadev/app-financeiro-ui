@@ -1,7 +1,7 @@
 <div class="ui-g">
 
   <div class="ui-g-12 ui-md-12 ui-lg-12">
-    <h1>Nova Pesoa</h1>
+    <h1>Nova Pessoa</h1>
   </div>
 
   <form #form="ngForm">
@@ -63,7 +63,7 @@
     <div class="ui-g-12">
       <button type="submit" pButton label="Salvar" [disabled]="form.invalid" ></button>
       <button type="submit" pButton label="Novo" class="ui-button-info"></button>
-      <a href="#">Voltar para pesquisa</a>
+      <a [routerLink]="['/pessoa/search']" >Voltar para pesquisa</a>
     </div>
 
   </form>

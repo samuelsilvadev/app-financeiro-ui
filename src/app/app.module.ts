@@ -1,15 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { CoreModule } from './core/core.module';
 import { LancamentoModule } from './lancamento/lancamento.module';
 import { PessoaModule } from './pessoa/pessoa.module';
 
 import { AppComponent } from './app.component';
-
-import { NavbarComponent } from './navbar/navbar.component';
-import { MenuLateralComponent } from './navbar/menu-lateral/menu-lateral.component';
 
 import { ROUTING } from './app.routing';
 import { HomeComponent } from './home/home.component';
@@ -20,12 +19,12 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     FormsModule,
     LancamentoModule,
-    PessoaModule
+    PessoaModule,
+    CoreModule,
+    RouterModule
   ],
   declarations: [
     AppComponent,
-    NavbarComponent,
-    MenuLateralComponent,
     HomeComponent
   ],
   providers: [],

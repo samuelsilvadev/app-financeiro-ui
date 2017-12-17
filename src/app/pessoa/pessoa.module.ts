@@ -2,6 +2,7 @@ import { SharedModule } from './../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
@@ -18,6 +19,7 @@ import { PessoaSearchComponent } from './pessoa-search/pessoa-search.component';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     TabViewModule,
     ButtonModule,
     InputTextModule,
